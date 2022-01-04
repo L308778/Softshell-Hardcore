@@ -1,0 +1,16 @@
+.D_D-container{
+    text-align: center;
+}
+
+.D_D-image{
+    justify-content:center; 
+}
+
+.D_D-image-item{
+    max-width:70%;
+    max-height:50vh;
+    vertical-align: middle;
+    margin-top: 5vh;
+    margin-left:5vw;
+    margin-right:5vw
+}

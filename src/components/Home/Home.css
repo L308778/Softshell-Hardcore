@@ -1,0 +1,302 @@
+.Home-img-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 2vh;
+  flex-direction: column;
+  align-items: center
+}
+
+.Home-img {
+  max-width:100%;
+  max-height:100%;
+  vertical-align: middle;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 70vh;
+  perspective: 1500px;
+  justify-content: center;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  align-self: center;
+  text-align: center
+}
+
+.flip-card-front {
+  background-color: white;
+  color: black;
+  position:fixed;
+  left: 0;
+  object-fit: contain;
+}
+
+.flip-card-back {
+  background-color: turquoise;
+  color: white;
+  transform: rotateY(180deg);
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flip-card-back-header {
+  font-size: 40px;
+  color: rgb(216, 97, 196);
+  line-break: strict;
+  justify-content: center;
+  text-align: center;
+  font-weight: 900;
+  font-family: "avestrava";
+}
+
+.flip-card-back-text {
+  font-size: 20px;
+  color: rgb(216, 97, 196);
+  line-break: strict;
+  justify-content: center;
+  text-align: center;
+  width: 70%;
+  font-weight: 300;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 30px;
+}
+
+.flip-card-back-text-since {
+  font-size: 15px;
+  color: rgb(216, 97, 196);
+  line-break: strict;
+  justify-content: center;
+  text-align: center;
+  width: 70%;
+  font-weight: 200;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 30px;
+}
+
+
+@media screen and (min-width: 1px) and (max-width: 380px) {
+  .Home-img-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 2vh;
+  }
+  
+  .Home-img {
+    width:100%;
+    height:100%;
+    vertical-align: middle;
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    perspective: 1500px;
+    justify-content: center;
+    width:100%
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    left:50vh
+  }
+  
+  .flip-card-front {
+    background-color: white;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: turquoise;
+    color: white;
+    transform: rotateY(180deg);
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    left:50vh;
+    position:fixed
+  }
+  
+  .flip-card-back-header {
+    font-size: 35px;
+    color: rgb(216, 97, 196);
+    line-break: strict;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    font-weight: 900;
+    font-family: "avestrava";
+  }
+  
+  .flip-card-back-text {
+    font-size: 15px;
+    color: rgb(216, 97, 196);
+    line-break: strict;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    font-weight: 300;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    line-height: 30px;
+  }
+  
+  .flip-card-back-text-since {
+    font-size: 10px;
+    color: rgb(216, 97, 196);
+    line-break: strict;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    font-weight: 200;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    line-height: 30px;
+  }
+
+}
+
+@media screen and (min-width: 381px) and (max-width: 960px) {
+  .Home-img-container {
+    display: flex;
+    text-align: center;
+    width: 100vw;
+    justify-content: center;
+    padding-top: 2vh;
+  }
+  
+  .Home-img {
+    max-width:100%;
+    max-height:100%;
+    vertical-align: middle;
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 70vh;
+    perspective: 1500px;
+    justify-content: center;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: white;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: turquoise;
+    color: white;
+    transform: rotateY(180deg);
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .flip-card-back-header {
+    font-size: 30px;
+    color: rgb(216, 97, 196);
+    line-break: strict;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    font-weight: 900;
+    font-family: "avestrava";
+  }
+  
+  .flip-card-back-text {
+    font-size: 15px;
+    color: rgb(216, 97, 196);
+    line-break: strict;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    font-weight: 300;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    line-height: 30px;
+  }
+  
+  .flip-card-back-text-since {
+    font-size: 10px;
+    color: rgb(216, 97, 196);
+    line-break: strict;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    font-weight: 200;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    line-height: 30px;
+  }
+
+}

@@ -1,0 +1,24 @@
+.Contact-container{
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    position: fixed;
+    bottom:0;
+    align-self: center;
+}
+
+.Contact-email{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+
+@media screen and (min-width: 381px) and (max-width: 960px) {
+    .Contact-email{
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+}
