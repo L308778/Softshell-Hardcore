@@ -19,6 +19,10 @@ export default function Navbar() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const showButton = () => {
     if (window.innerWidth <= 960) {
       setButton(false);

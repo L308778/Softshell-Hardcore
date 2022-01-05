@@ -8,6 +8,10 @@ import Contact from "./contact";
 export default function Home() {
   const SCREEN_WIDTH = window.innerWidth;
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <div
