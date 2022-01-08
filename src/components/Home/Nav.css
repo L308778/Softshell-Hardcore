@@ -29,7 +29,7 @@
 }
 
 .navbar-logo {
-  color: rgb(216, 97, 196);
+  color: rgb(239, 129, 159);
   justify-self: start;
   margin-left: 30px;
   cursor: pointer;
@@ -38,6 +38,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
+  margin-top: 0;
 }
 
 .fa-typo3 {
@@ -66,7 +67,7 @@
   align-items: center;
   text-decoration: none;
   height: 100%;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 400;
   font-family: "Peignot";
 }
