@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "./fonts/avestrava.ttf"
+import "./fonts/Peignot.ttf"
 
 ReactDOM.render(
   <React.StrictMode>

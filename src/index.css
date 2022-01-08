@@ -17,4 +17,10 @@ code {
   src: local("avestrava"),
     url("./fonts/avestrava.ttf") format("truetype");
   font-weight: normal;
+
+  font-family: "Peignot";
+  src: local("Peignot"),
+    url("./fonts/Peignot.ttf") format("truetype");
+  font-weight: normal;
+
 }

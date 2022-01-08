@@ -9,7 +9,7 @@ export default function Contact() {
         <a href="https://www.instagram.com/softshellhardcore/" target="_blank">
                   <AiFillInstagram size={40} style={{margin:"20px", color:"rgb(226, 108, 206)"}}/>
                   </a>
-                  <p className="Contact-email" style = {{fontFamily:"avestrava", fontSize:"40px"}}>
+                  <p className="Contact-email">
                   antiniacreation@gmail.com
               </p>
               <a href="mailto:antiniacreation@gmail.com">

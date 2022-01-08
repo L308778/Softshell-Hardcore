@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { AiFillHeart } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import './Nav.css';
+import Logo from "../../images/logo.png"
 
 /*
 Delete contax style
@@ -42,6 +43,9 @@ export default function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
+        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          <img src={Logo} style={{objectFit:"contain", position:"absolute", left:0, top:0, height:"100px", width:"200px", marginLeft:"2vh"}}/>
+          </Link>
           
           <div className='menu-icon' onClick={handleClick}>
 
@@ -49,7 +53,7 @@ export default function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu' } >
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu} style = {{fontFamily:"avestrava"}}>
+              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                 HOME
               </Link>
             </li>
@@ -58,7 +62,6 @@ export default function Navbar() {
                 to='/dand'
                 className='nav-links'
                 onClick={closeMobileMenu}
-                style = {{fontFamily:"avestrava"}}
               >
                 D&D
               </Link>
@@ -68,7 +71,6 @@ export default function Navbar() {
                 to='/painting'
                 className='nav-links'
                 onClick={closeMobileMenu}
-                style = {{fontFamily:"avestrava"}}
               >
                 PAINTINGS
               </Link>
@@ -79,7 +81,6 @@ export default function Navbar() {
                 to='/tattoo'
                 className='nav-links'
                 onClick={closeMobileMenu}
-                style = {{fontFamily:"avestrava"}}
               >
                 TATTOO
               </Link>
