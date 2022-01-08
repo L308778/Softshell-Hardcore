@@ -58,7 +58,7 @@
 
 .nav-item {
   height: 80px;
-  margin: 4rem;
+  margin: 1rem;
 }
 
 .nav-links {
@@ -121,7 +121,7 @@
     text-align: center;
     width: 100%;
     display: table;
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .nav-links:hover {
@@ -201,7 +201,7 @@
     text-align: center;
     width: 100%;
     display: table;
-    font-size: 10px;
+    font-size: 20px;
   }
 
   .nav-links:hover {
