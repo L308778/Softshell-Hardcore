@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from "react";
 import Navbar from "./Home/Nav";
 import "./DandD.css";
 import { Fade } from "react-reveal";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 
 export default function DandD() {
@@ -19,7 +20,7 @@ export default function DandD() {
   
   {images.map((item) => (
     <Fade left duration={3000}>
-      <img
+      <LazyLoadImage
         src={item.image}
         loading="lazy"
         className="D_D-image-item"

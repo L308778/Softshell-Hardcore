@@ -2,6 +2,7 @@ import React, {useEffect} from "react";
 import Navbar from "./Home/Nav";
 import "./Tattoo.css";
 import Zoom from 'react-reveal/Zoom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function Tattoo() {
 
@@ -18,7 +19,7 @@ export default function Tattoo() {
   
   {images.map((item) => (
     <Zoom duration={3000}>
-      <img
+      <LazyLoadImage
         src={item.image}
         loading="lazy"
         className="Tattoo-image-item"

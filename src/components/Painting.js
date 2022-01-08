@@ -2,6 +2,7 @@ import React, {useEffect} from "react";
 import Navbar from "./Home/Nav";
 import "./Painting.css";
 import Flip from 'react-reveal/Flip';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function Paintings() {
 
@@ -18,7 +19,7 @@ export default function Paintings() {
 
   {images.map((item) => (
     <Flip duration={3000}>
-      <img
+      <LazyLoadImage
         src={item.image}
         loading="lazy"
         className="Tattoo-image-item"
