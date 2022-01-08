@@ -58,6 +58,7 @@
 
 .nav-item {
   height: 80px;
+  margin:4rem
 }
 
 .nav-links {
@@ -100,6 +101,11 @@
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
+  }
+
+  .nav-item {
+    height: 80px;
+    margin:0.5rem
   }
 
   .nav-menu.active {
@@ -179,6 +185,11 @@
     opacity: 1;
     transition: all 0.5s ease;
     display: none;
+  }
+
+  .nav-item {
+    height: 80px;
+    margin:1rem
   }
 
   .nav-menu.active {
