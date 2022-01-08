@@ -23,6 +23,7 @@ export default function Tattoo() {
         loading="lazy"
         className="Tattoo-image-item"
         key={item.key}
+        onContextMenu="return false;"
       />
       </Zoom>
   ))}

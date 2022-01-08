@@ -23,6 +23,7 @@ export default function Paintings() {
         loading="lazy"
         className="Tattoo-image-item"
         key={item.key}
+        onContextMenu="return false;"
       />
       </Flip>
   ))}

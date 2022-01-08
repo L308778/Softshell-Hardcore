@@ -24,6 +24,7 @@ export default function DandD() {
         loading="lazy"
         className="D_D-image-item"
         key={item.key}
+        onContextMenu="return false;"
       />
       </Fade>
   ))}
