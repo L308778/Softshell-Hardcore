@@ -14,11 +14,11 @@
     margin-left:5vw;
     margin-right:5vw;
     z-index: 1000;
+    transition: 1s ease;
 }
 
 .D_D-image-item:hover {
     transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    transition-duration: 1s;
     z-index: 1;
     margin-top: 20vh;
     margin-bottom: 50vh;
@@ -28,7 +28,6 @@
 
     .D_D-image-item:hover {
         transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-        transition-duration: 1s;
         z-index: 1;
         margin-top: 5vh;
         margin-bottom: 5vh;

@@ -12,11 +12,12 @@
     vertical-align: middle;
     margin-top: 5vh;
     margin-left:5vw;
-    margin-right:5vw
+    margin-right:5vw;
+    transition: 1s ease;
 }
 
 .Tattoo-image-item:hover {
-    transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(2);
     transition-duration: 1s;
     z-index: 1;
     margin-top: 20vh;
@@ -26,8 +27,7 @@
   @media screen and (max-width: 960px) {
 
     .Tattoo-image-item:hover {
-        transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-        transition-duration: 1s;
+        transform: scale(1.1);
         z-index: 1;
         margin-top: 5vh;
         margin-bottom: 5vh;
