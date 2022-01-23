@@ -14,3 +14,11 @@
     margin-left:5vw;
     margin-right:5vw
 }
+
+.Tattoo-image-item:hover {
+    transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transition-duration: 1s;
+    z-index: 1;
+    margin-top: 20vh;
+    margin-bottom: 50vh;
+  }
